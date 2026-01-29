@@ -92,9 +92,11 @@ int main(void)
   GPIO_InitStruct.Pin = LED_BLUE_PIN;
   HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
-  // PA15
+  // Could not make light PA15.
+  // Using PB4 instead
   GPIO_InitStruct.Pin = LED_RED_Pin;
   HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
+
   /* USER CODE END Init */
 
   /* Configure the system clock */

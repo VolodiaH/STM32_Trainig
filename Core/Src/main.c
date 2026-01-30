@@ -116,7 +116,6 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-    /* USER CODE END WHILE */
 	  LL_GPIO_SetOutputPin(LED_BLUE_GPIO_Port, LED_BLUE_PIN);
 	  HAL_Delay(200);
 	  LL_GPIO_ResetOutputPin(LED_BLUE_GPIO_Port, LED_BLUE_PIN);
@@ -126,6 +125,8 @@ int main(void)
 	  HAL_Delay(200);
 	  LL_GPIO_ResetOutputPin(LED_RED_GPIO_Port, LED_RED_Pin);
 	  HAL_Delay(200);
+    /* USER CODE END WHILE */
+	  
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
